@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi información</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Mi información</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Datos personales</h2>
+      <p>
+        Nombre: brandon ulises<br>
+        Apellidos: rodriguez govea<br>
+        Edad: 17<br>
+        Sexo: Masculino<br>
+        Fecha de nacimiento: 25/07/2008<br>
+        Lugar de nacimiento: Jalisco, Ojuelos
+      </p>
+
+      <h3>Otras cosas</h3>
+      <p>
+        Estado civil: Soltero<br>
+        Ocupación: Estudiante<br>
+        Pasatiempos:escuchar música, trabajar,cortar pelo <br>
+        color favorito: negro<br>
+        comida favorita:pene<br>
+    
+        aspiracion:ser barbero profesional<br>
+        
+      </p>
+    </section>
+    <p>
+      <a class="back" href="index.html">← Volver</a>
+      <button id="logout">Cerrar sesión</button>
+    </p>
+  </main>
+
+  <footer>
+    <p>Hecho por: Juan Ramses</p>
+  </footer>
+  <script>
+    // Simple client-side auth check
+    const auth = JSON.parse(localStorage.getItem('auth') || 'null');
+    if (!auth) {
+      // redirect to login if not authenticated
+      window.location.href = 'login.html';
+    }
+    document.getElementById('logout').addEventListener('click', () => {
+      localStorage.removeItem('auth');
+      window.location.href = 'index.html';
+    });
+  </script>
+</body>
+</html>
