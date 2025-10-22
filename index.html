@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NGL - Deja un mensaje</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1 id="title">Enviar mensaje</h1>
+    <p id="subtitle">Entrarás como: <strong id="username-display"></strong></p>
+
+    <textarea id="message" placeholder="Deja un mensaje anónimo..." rows="6"></textarea>
+
+    <div class="row">
+      <button id="sendBtn">Enviar anónimo</button>
+      <button id="copyLinkBtn">Copiar link de mi buzón</button>
+    </div>
+
+    <p class="hint">Este proyecto tiene 2 modos:<br>
+      • <strong>Demo local</strong>: funciona ahora mismo (guarda mensajes en el navegador).<br>
+      • <strong>Firebase</strong>: guarda mensajes en la nube — debes configurar firebase-config.js (ver README).</p>
+
+    <p class="foot">URL ejemplo: <code>https://tu-usuario.github.io/juan</code></p>
+  </main>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

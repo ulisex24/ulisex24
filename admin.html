@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Buzón - Admin</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>Buzón</h1>
+    <p>Introduce el nombre de usuario cuyo buzón quieres ver:</p>
+    <div class="row">
+      <input id="boxName" placeholder="ej: juan" />
+      <button id="loadBtn">Cargar mensajes</button>
+    </div>
+
+    <div id="messages"></div>
+
+    <hr/>
+    <h3>Modo de funcionamiento</h3>
+    <p>Por defecto la demo usa <strong>LocalStorage</strong> (útil para probar ahora mismo). Si quieres guardar mensajes en la nube, configura Firebase y activa la opción en <code>firebase-config.js</code>. Ver README.</p>
+  </main>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
